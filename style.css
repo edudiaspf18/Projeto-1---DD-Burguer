@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+
+  font-family: "Inter", sans-serif;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  background-color: #141414;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+.logo a {
+  font-family: "Calistoga", cursive;
+  font-size: 36px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo a span {
+  color: #fe6a0f;
+}
+
+/* Header*/
+header .container {
+  display: flex;
+  align-items: center;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  gap: 50px;
+}
+header nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+header nav .leftside {
+  display: flex;
+  flex: 1;
+}
+header nav li {
+  margin: 0 30px;
+}
+
+header nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+header nav li a:hover {
+  color: #fe6a0f;
+  transition: 0.3s;
+}
+
+header nav .button {
+  display: block;
+  border: 1px solid #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav .button:hover {
+  border-color: #fe6a0f;
+  color: #fe6a0f;
+  transition: 0.3s;
+}
+
+header .menu {
+  display: none;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+header .menu-item {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+header .menu-item div {
+  height: 6px;
+  background-color: #fff;
+}
+
+/* HERO */
+.hero .container {
+  display: flex;
+}
+.hero .leftside,
+.hero .rightside {
+  flex: 1;
+}
+.hero .leftside {
+  padding-bottom: 150px;
+}
+.hero .rightside {
+  text-align: center;
+}
+.hero .rightside .img {
+  width: auto;
+  height: 50px;
+}
+
+.hero h1 {
+  font-family: "Calistoga";
+  font-size: 72px;
+  line-height: 74px;
+  margin-top: 50px;
+}
+
+.hero p {
+  font-size: 20px;
+  line-height: 26px;
+  margin: 40px 0;
+}
+
+.hero .button {
+  display: inline-block;
+  background-color: #fe6a0f;
+  font-weight: 500;
+  color: #fff;
+  padding: 15px 80px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.hero .button:hover {
+  opacity: 0.8;
+}
+/* RESPONSIVIDADE*/
+@media (max-width: 820px) {
+  header nav {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  header .menu {
+    display: flex;
+    cursor: pointer;
+  }
+  .hero .container {
+    flex-direction: column;
+  }
+  .hero .leftside {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .hero .rightside {
+    margin-bottom: 30px;
+  }
+  .hero .rightside .img {
+    height: 300px;
+  }
+  .hero h1 {
+    font-size: 44px;
+    line-height: 50px;
+  }
+}
