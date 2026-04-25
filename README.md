@@ -28,6 +28,5 @@ Design Moderno
 Sinta-se à vontade para abrir uma Issue ou enviar um Pull Request com melhorias! 
 Todo feedback é muito bem-vindo para o meu crescimento como desenvolvedor.
 
-👤 Autor
-Desenvolvido por Eduardo Dias (edudiaspf18).
+👤 Desenvolvido por Eduardo Dias (edudiaspf18).
 
